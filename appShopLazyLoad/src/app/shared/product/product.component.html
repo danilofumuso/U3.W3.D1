@@ -1,0 +1,21 @@
+<div class="card mt-5" *ngIf="product">
+  <img [src]="product.thumbnail" [alt]="product.title" />
+  <div class="card-body">
+    <h5 class="card-title">{{ product.title }}</h5>
+    <p class="card-text">
+      {{ product.description }}
+    </p>
+    <p>
+      {{ product.price | currency : "EUR" }}
+    </p>
+    <a
+      (click)="addToFavs(product)"
+      (click)="toggle()"
+      class="btn btn-outline-danger mx-1"
+      >Like</a
+    >
+    <a (click)="addProductToCart(product)" class="btn btn-outline-primary mx-1"
+      >Buy</a
+    >
+  </div>
+</div>
