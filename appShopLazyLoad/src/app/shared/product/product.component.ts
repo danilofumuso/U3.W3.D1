@@ -10,7 +10,6 @@ import { AuthService } from '../../services/auth.service';
 })
 export class ProductComponent {
   @Input() product!: iProduct;
-  isTrue: boolean = false;
 
   constructor(
     private productSvc: ProductService,
@@ -26,6 +25,6 @@ export class ProductComponent {
   }
 
   toggle() {
-    this.authSvs.toggleBoolean();
+    this.authSvs.toggleBoolean(); //N.B.= addToFavs e toggle sono 2 metodi scatenati dallo stesso click di un bottone, sarebbe meglio fare un metodo solo!
   }
 }
