@@ -8,7 +8,7 @@ export class AuthService {
 
   isTrue: boolean = false;
 
-  toggleBoolean() {
-    this.isTrue = !this.isTrue;
+  changeBoolean() {
+    this.isTrue = true;
   }
 }

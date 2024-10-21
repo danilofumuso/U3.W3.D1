@@ -24,7 +24,7 @@ export class ProductComponent {
     this.productSvc.addToFavourites(product);
   }
 
-  toggle() {
-    this.authSvs.toggleBoolean(); //N.B.= addToFavs e toggle sono 2 metodi scatenati dallo stesso click di un bottone, sarebbe meglio fare un metodo solo!
+  change() {
+    this.authSvs.changeBoolean(); //N.B.= addToFavs e change sono 2 metodi scatenati dallo stesso click di un bottone, sarebbe meglio fare un metodo solo!
   }
 }
